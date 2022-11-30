@@ -1,0 +1,97 @@
+:root {
+    --default: 44px;
+    --one: 118px;
+    --two: 192px;
+    --three: 266.5px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #020101;
+}
+
+#content {
+    margin: 0 auto;
+    width: 412px;
+    height: 100vh;
+    border: 2px solid #ffa500;
+}
+
+#footer {
+    display: flex;
+    justify-content: center;
+}
+
+#navFooter {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #fff;
+    position: fixed;
+    bottom: 31px;
+    height: 8%;
+    width: 350px;
+    border-radius: 50px;
+}
+
+#circuloSobreicon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #adff2f;
+    z-index: -1;
+    position: absolute;
+    top: 11px;
+    transition: 1s;
+}
+
+.slide-default {
+    left: var(--default)
+}
+
+.slide-one {
+    left: var(--one);
+}
+
+.slide-two {
+    left: var(--two);
+}
+
+.slide-three {
+    left: var(--three);
+}
+
+svg {
+    cursor: pointer;
+}
+
+.indicator {
+    position: absolute;
+    top: -38px;
+    height: 45px;
+    width: 35px;
+    background-color: #020101;
+    border-radius: 50%;
+    transition: 1s;
+}
+
+.indicator-default {
+    left: calc(var(--default) + 4.5px);
+}
+
+.indicator-one {
+    left: calc(var(--one) + 4.5px);
+}
+
+.indicator-two {
+    left: calc(var(--two) + 4.5px);
+}
+
+.indicator-three {
+    left: calc(var(--three) + 4.5px);
+}
