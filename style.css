@@ -1,8 +1,9 @@
 :root {
     --default: 44px;
-    --one: 118px;
+    --one: 117.5px;
     --two: 192px;
     --three: 266.5px;
+    --aux: 3px;
 }
 
 * {
@@ -12,7 +13,7 @@
 }
 
 body {
-    background-color: #020101;
+    background-color: #ad48;
 }
 
 #content {
@@ -34,7 +35,7 @@ body {
     background-color: #fff;
     position: fixed;
     bottom: 31px;
-    height: 8%;
+    height: 60.29px;
     width: 350px;
     border-radius: 50px;
 }
@@ -43,10 +44,10 @@ body {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: #adff2f;
+    background-color: #ffa500;
     z-index: -1;
     position: absolute;
-    top: 11px;
+    top: 10px;
     transition: 1s;
 }
 
@@ -72,26 +73,51 @@ svg {
 
 .indicator {
     position: absolute;
-    top: -38px;
-    height: 45px;
+    top: 5px;
+    height: 2.5px;
     width: 35px;
     background-color: #020101;
-    border-radius: 50%;
+    border-radius: 2px;
     transition: 1s;
 }
 
 .indicator-default {
-    left: calc(var(--default) + 4.5px);
+    left: calc(var(--default) + var(--aux));
 }
 
 .indicator-one {
-    left: calc(var(--one) + 4.5px);
+    left: calc(var(--one) + var(--aux));
 }
 
 .indicator-two {
-    left: calc(var(--two) + 4.5px);
+    left: calc(var(--two) + var(--aux));
 }
 
 .indicator-three {
-    left: calc(var(--three) + 4.5px);
+    left: calc(var(--three) + var(--aux));
+}
+
+#selected {
+  fill: #000;
+}
+
+#indicador {
+  position: absolute;
+  top: -6px;
+  transition: 1s;
+}
+
+#indicador img {
+  width: 35px;
+}
+
+#indicador svg {
+  width: 140px;
+  height: 140px;
+  position: absolute;
+  top: 6px;
+}
+
+.default {
+  left: -52.5px;
 }
